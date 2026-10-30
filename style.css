@@ -109,7 +109,7 @@ nav ul {
 
   list-style-type: none;
   width: fit-content;
-  margin: 0 auto;
+  margin-right: 45px;
   padding: 0;
   background-color: #333333;
   border: 1px solid rgb(255, 255, 255);
@@ -183,6 +183,22 @@ nav ul li a.active{
     border-radius: 12px;
 }
 
+.values-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.values-text{
+    flex: 1;
+}
+
+.values-img{
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+}
 
 /* Sections */
 
