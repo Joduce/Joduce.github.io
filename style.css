@@ -220,14 +220,34 @@ nav ul li a.active{
     margin: 20px;
 }
 
-.section2 {
-    max-width: 800px;                       
-    margin: 40px auto;                       
-    border: 10px solid rgb(255, 253, 253);
-    border-radius: 15px;
-    padding: 50px;
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
 }
 
+@keyframes snake {
+    to { --angle: 360deg; }
+}
+
+.section2 {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 50px;
+    border-radius: 15px;
+
+    border: 10px solid transparent;    /* border is see-through now */
+    background:
+        linear-gradient(black, black) padding-box,          
+        conic-gradient(
+            from var(--angle),
+            rgb(255, 253, 253) 0deg 130deg,                 
+            hsl(0, 95%, 40%) 340deg,                       
+            rgb(255, 253, 253) 360deg                       
+        ) border-box;
+    animation: snake 5s linear infinite;
+}
 
 /* Media Query  --> Keeps the integrity of the portfolio regardless of the site */
 
