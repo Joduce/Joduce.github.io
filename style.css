@@ -273,3 +273,28 @@ nav ul li a.active{
         padding: 25px;
     }
 }
+
+
+/* ICONS */
+
+.header-right {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 10px;
+}
+
+.socials {
+    display: flex;             
+    gap: 20px;
+}
+
+.socials a {
+    font-size: 1.5rem;        
+    color: white;
+    transition: color 0.2s;
+}
+
+.socials a:hover {
+    color: hsl(0, 95%, 40%);   
+}
