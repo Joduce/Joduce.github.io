@@ -25,6 +25,7 @@ h1 {
 
 h2{
     color: white;
+    
     padding: 5px;
     font-size: clamp(2rem, 5vw, 3rem);
     font-family: 'Space Grotesk', sans-serif;
@@ -166,7 +167,7 @@ nav ul li a.active{
 
 .about {                                    
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     gap: 40px;
     max-width: 1100px;
@@ -177,6 +178,10 @@ nav ul li a.active{
 .about-text,
 .about-images {                       
     flex: 1;
+}
+
+.about-text h2{
+    margin-top: 0;
 }
 
 .about-images {                              
