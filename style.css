@@ -236,6 +236,7 @@ nav ul li a.active{
     to { --angle: 360deg; }
 }
 
+
 .section2 {
     width: 90%;
     max-width: 1400px;
@@ -295,6 +296,8 @@ nav ul li a.active{
     gap: 20px;
 }
 
+
+
 .socials a {
     font-size: 1.5rem;        
     color: white;
@@ -303,4 +306,19 @@ nav ul li a.active{
 
 .socials a:hover {
     color: hsl(0, 95%, 40%);   
+}
+
+
+/* I want to seperate the skills like this:
+
+1. Starter Node ( Parent Node )
+2. Skills Nodes ( Child Nodes )
+3. Node Breakdowns / Information on project including said nodes ( Grandchildren nodes )
+
+
+*/
+
+.skills{
+    display: flex;
+    
 }
