@@ -309,16 +309,31 @@ nav ul li a.active{
 }
 
 
-/* I want to seperate the skills like this:
+/* This will be put into a skill bar for now.
+Once I have more knowledge in CSS and TypeScript I will then transform
+it into a skill tree. */
 
-1. Starter Node ( Parent Node )
-2. Skills Nodes ( Child Nodes )
-3. Node Breakdowns / Information on project including said nodes ( Grandchildren nodes )
+/* Will change this so it uses flexbox later. */
 
+*{box-sizing: border-box}
 
-*/
+/* Container for skill bars */
+.container{
+    width: 60%;
+    background-color: grey
+
+}
 
 .skills{
-    display: flex;
-    
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
 }
+
+.html {width: 50%; background-color: #04AA6D;} 
+.css {width: 50%; background-color: #2196F3;} 
+.js {width: 10%; background-color: #f44336;} 
+.java {width: 50%; background-color: maroon;}
+.py {width: 70%; background-color: yellowgreen}
+
